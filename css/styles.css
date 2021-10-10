@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+:root {
+	--title-font: 'Ephesis';
+	--link-font: arial, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list-link {
+	color: black;
+}
+
+h1 {
+	font-family: var(--title-font);
+	padding: 5px 1em 0 1em;
+	color: red;
+	transition: transform 0.5s;
+} h1:hover {
+	transform: scale(1.1);
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	list-style-type: none;
+	background-color: lightgray;
+	padding: 1em;
+	font-family: var(--link-font);
+	transition: background-color 0.5s;
+	cursor: pointer;
+} li:hover {
+	background-color: #979797;
+}
+
+header {
+	display: flex;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	background-color: white;
+} footer p {
+	padding: 1em;
+	font-family: var(--link-font);
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+article {
+	background-color: white;
+	border-radius: 10px;
+	transition: transform 0.5s;
+	cursor: pointer;
+	width: 20vw;
+	height: auto;
+} article:hover {
+	transform: scale(1.1);
+} article p {
+	font-family: var(--link-font);
+	padding: 0.5em;
+}
+.article-img {
+	border-radius: 10px 10px 0 0;
+}
+
+body {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
