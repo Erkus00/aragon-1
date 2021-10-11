@@ -1,0 +1,41 @@
+:root {
+	--product-border: 2px solid black;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.row {
+	display: flex;
+} .row > .product__info {
+	border-left: var(--product-border);
+}
+
+
+.reverse__row {
+	display: flex;
+	flex-direction: row-reverse;
+} .reverse__row > .product__info {
+	border-right: var(--product-border);
+}
+
+.product__info {
+	width: 100%;
+}
+
+.product__img, .product__info {
+	padding: 1em 4em;
+}
+
+.product {
+	padding: 1em;
+}
+
+
