@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
 :root {
+	--logo-font: 'ZCOOL KuaiLe';
 	--product-border: 2px solid black;
 }
 
@@ -13,7 +16,9 @@ li {
 }
 
 #logo {
-	padding: 1em 4em;
+	padding: 0.5em 4em;
+} #logo > a {
+	font-family: var(--logo-font);
 }
 
 a {
@@ -69,7 +74,7 @@ a {
 }
 
 .product__price {
-	padding: 1em;
+	padding: 1em 0;
 }
 
 .product {
@@ -82,8 +87,35 @@ a {
 	font-size: 34px;
 }
 
+.flex-end {
+	justify-content: flex-end;
+}
+
+#buy__alert {
+	position: fixed;
+	width: 50%;
+	border-radius: 0 7px;
+	bottom: 1em;
+	left: 1em;
+	background-color: black;
+	color: white;
+	opacity: 0;
+	display: none;
+} #close__alert {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	text-align: center;
+	padding: 0.5em 1em;
+} #alert__info > .product__name {
+	margin-bottom: 0.5em;
+} #alert__info {
+	padding: 0 1em;
+}
+
 input[type="button"] {
 	padding: 1em;
+	margin-left: 1em;
 	background-color: black;
 	color: white;
 	cursor: pointer;
@@ -93,4 +125,12 @@ input[type="button"] {
 } input[type="button"]:hover {
 	background-color: white;
 	color: black;
+}
+
+footer {
+	padding: 5em;
+	margin-top: 4em;
+	background-color: gray;
+} footer > section {
+	color: white;
 }
